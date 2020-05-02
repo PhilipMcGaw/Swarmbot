@@ -48,9 +48,5 @@ sudo reboot
 
 
 
------- Physical Design Constrates
 
-Smallest 3D Printer maximum dimensions 100 x 100 x 100
-Largest Cheap PCB from China 100 x 100 FR4 (50¢ each)
-Largest PCB dimensions that can be produced using Eagle 'free' level 100 x 80
 
