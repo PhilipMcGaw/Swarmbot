@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name DF-M_Series_Micro_Switches)(type Legacy)(uri "${KIPRJMOD}/Libraries/DF-M Series Micro Switches/DF-M Series Micro Switches.lib")(options "")(descr ""))
+  (lib (name HC-SR04)(type Legacy)(uri "${KIPRJMOD}/Libraries/HC-SR04 - Ultrasonic Sensor/HC-SR04.lib")(options "")(descr ""))
+  (lib (name SquashedFly_Logo)(type Legacy)(uri "${KIPRJMOD}/Libraries/SquashedFly Logo/SquashedFly Logo.lib")(options "")(descr ""))
+)

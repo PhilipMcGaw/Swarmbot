@@ -1,0 +1,56 @@
+sudo apt update
+sudo apt upgrade -y
+sudo apt install realvnc-vnc-server realvnc-vnc-viewer -y
+
+sudo raspi-config
+
+Now, enable VNC Server by doing the following:
+
+    Navigate to Interfacing Options.
+    Scroll down and select VNC > Yes
+
+need to turn camera
+	
+https://www.raspberrypi.org/documentation/remote-access/vnc/
+
+
+-----
+
+https://learn.watterott.com/hats/rpi-uno-hat/
+
+sudo apt-get install arduino
+wget https://github.com/watterott/RPi-UNO-HAT/raw/master/software/autoreset
+wget https://github.com/watterott/RPi-UNO-HAT/raw/master/software/avrdude-autoreset
+
+chmod +x autoreset
+chmod +x avrdude-autoreset
+
+sudo mv autoreset /usr/bin
+sudo mv avrdude-autoreset /usr/bin
+
+sudo mv /usr/bin/avrdude /usr/bin/avrdude-original
+sudo ln -s /usr/bin/avrdude-autoreset /usr/bin/avrdude
+
+
+sudo raspi-config
+
+Select:
+
+Interfacing Options > Serial > Disable shell > Enable serial port hardware
+
+update the raspi-config tool
+
+sudo reboot
+
+
+
+
+
+
+
+------ Physical Design Constrates
+
+Smallest 3D Printer maximum dimensions 100 x 100 x 100
+Largest Cheap PCB from China 100 x 100 FR4 (50¢ each)
+Largest PCB dimensions that can be produced using Eagle 'free' level 100 x 80
+
