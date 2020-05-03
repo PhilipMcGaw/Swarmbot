@@ -87,29 +87,29 @@ SwFL
 $Comp
 L power:+5V #PWR037
 U 1 1 5DA6D0A1
-P 8150 5400
-F 0 "#PWR037" H 8150 5250 50  0001 C CNN
-F 1 "+5V" H 8165 5573 50  0000 C CNN
-F 2 "" H 8150 5400 50  0001 C CNN
-F 3 "" H 8150 5400 50  0001 C CNN
-	1    8150 5400
+P 8150 5550
+F 0 "#PWR037" H 8150 5400 50  0001 C CNN
+F 1 "+5V" H 8165 5723 50  0000 C CNN
+F 2 "" H 8150 5550 50  0001 C CNN
+F 3 "" H 8150 5550 50  0001 C CNN
+	1    8150 5550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x08 J9
+L Connector_Generic:Conn_01x06 J9
 U 1 1 5DA7A600
 P 8750 5800
 F 0 "J9" H 8830 5792 50  0000 L CNN
 F 1 "MainIO" H 8830 5701 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 8750 5800 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x06_P2.50mm_Vertical" H 8750 5800 50  0001 C CNN
 F 3 "~" H 8750 5800 50  0001 C CNN
 	1    8750 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8550 5900 8150 5900
+	8550 5800 8150 5800
 Wire Wire Line
-	8550 6000 8350 6000
+	8550 5900 8400 5900
 Text GLabel 9350 4450 0    50   Input ~ 0
 SwFL
 Text GLabel 9350 4350 0    50   Input ~ 0
@@ -370,19 +370,19 @@ Wire Wire Line
 	10000 5000 10000 4750
 Wire Wire Line
 	10100 4750 10100 5000
-Text GLabel 8350 6000 0    49   Input ~ 0
+Text GLabel 8400 5900 0    49   Input ~ 0
 RX
-Text GLabel 8350 6100 0    49   Input ~ 0
+Text GLabel 8400 6000 0    49   Input ~ 0
 TX
 $Comp
 L power:GND #PWR041
 U 1 1 5E39D6CA
-P 8150 6250
-F 0 "#PWR041" H 8150 6000 50  0001 C CNN
-F 1 "GND" H 8155 6077 50  0000 C CNN
-F 2 "" H 8150 6250 50  0001 C CNN
-F 3 "" H 8150 6250 50  0001 C CNN
-	1    8150 6250
+P 8150 6150
+F 0 "#PWR041" H 8150 5900 50  0001 C CNN
+F 1 "GND" H 8155 5977 50  0000 C CNN
+F 2 "" H 8150 6150 50  0001 C CNN
+F 3 "" H 8150 6150 50  0001 C CNN
+	1    8150 6150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -428,21 +428,17 @@ Wire Wire Line
 $Comp
 L power:+BATT #PWR038
 U 1 1 5E28F4F2
-P 8400 5400
-F 0 "#PWR038" H 8400 5250 50  0001 C CNN
-F 1 "+BATT" H 8415 5573 50  0000 C CNN
-F 2 "" H 8400 5400 50  0001 C CNN
-F 3 "" H 8400 5400 50  0001 C CNN
-	1    8400 5400
+P 8400 5550
+F 0 "#PWR038" H 8400 5400 50  0001 C CNN
+F 1 "+BATT" H 8415 5723 50  0000 C CNN
+F 2 "" H 8400 5550 50  0001 C CNN
+F 3 "" H 8400 5550 50  0001 C CNN
+	1    8400 5550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8400 5400 8400 5500
-Wire Wire Line
-	8400 5500 8550 5500
-Text GLabel 10650 3850 2    50   Input ~ 0
+Text GLabel 9350 3450 0    50   Input ~ 0
 Servo1
-Text GLabel 10650 3750 2    50   Input ~ 0
+Text GLabel 9350 3350 0    50   Input ~ 0
 Servo2
 Text GLabel 9350 3950 0    50   Input ~ 0
 Servo3
@@ -700,7 +696,7 @@ U 1 1 5E7AA311
 P 7000 1100
 F 0 "J1" H 7080 1092 50  0000 L CNN
 F 1 "Steper1" H 7080 1001 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7000 1100 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 7000 1100 50  0001 C CNN
 F 3 "~" H 7000 1100 50  0001 C CNN
 	1    7000 1100
 	1    0    0    -1  
@@ -722,7 +718,7 @@ U 1 1 5E7F7516
 P 7000 1650
 F 0 "J2" H 7080 1642 50  0000 L CNN
 F 1 "Steper2" H 7080 1551 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7000 1650 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 7000 1650 50  0001 C CNN
 F 3 "~" H 7000 1650 50  0001 C CNN
 	1    7000 1650
 	1    0    0    -1  
@@ -782,24 +778,16 @@ Text GLabel 9350 3550 0    50   Input ~ 0
 Sonar
 Connection ~ 9350 850 
 Wire Wire Line
-	8150 5900 8150 6200
+	8150 5800 8150 6100
 Wire Wire Line
 	8550 5600 8400 5600
 Wire Wire Line
-	8400 5600 8400 5500
-Connection ~ 8400 5500
+	8150 5700 8150 5550
 Wire Wire Line
-	8550 5800 8150 5800
+	8550 6100 8150 6100
+Connection ~ 8150 6100
 Wire Wire Line
-	8150 5800 8150 5700
-Connection ~ 8150 5700
-Wire Wire Line
-	8150 5700 8150 5400
-Wire Wire Line
-	8550 6200 8150 6200
-Connection ~ 8150 6200
-Wire Wire Line
-	8150 6200 8150 6250
+	8150 6100 8150 6150
 $Comp
 L Driver_Motor:TB6612FNG U4
 U 1 1 5E2A9892
@@ -960,7 +948,7 @@ Wire Wire Line
 Wire Wire Line
 	6900 3450 6900 3700
 Wire Wire Line
-	8550 6100 8350 6100
+	8550 6000 8400 6000
 $Comp
 L SquashedFly_Logo:SquashedFlyLogo Logo1
 U 1 1 5E61BDB0
@@ -1610,4 +1598,6 @@ Text GLabel 10650 4050 2    50   Input ~ 0
 OpFL
 Text GLabel 10650 4350 2    50   Input ~ 0
 OpFR
+Wire Wire Line
+	8400 5550 8400 5600
 $EndSCHEMATC
