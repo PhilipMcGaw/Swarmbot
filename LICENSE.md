@@ -4,9 +4,9 @@ Copyright (c) 2019 Philip 'Skippy' McGaw - Some rights reserved
 
 There are two parts to the Licensing, the Licence for the physical parts (CAD and Electrical), and the ethereal parts (Software).
 
-The Physical parts are under a TAPR Noncommercial Hardware License, and the etheral parts are under the The MIT License (MIT).
+The Physical parts are under a TAPR Noncommercial Hardware License, and the ethereal parts are under the MIT License (MIT).
 
-Some assets in this repo are interlectual property of other people or organisations; please check with them regarding licencing (Datasheets for example).
+Some assets in this repo are intellectual property of other people or organisations; please check with them regarding licensing (Data-sheets for example).
 
 I would love to hear from you if you have found a use for this device, Please email me philip@mcgaw.eu
 
@@ -135,4 +135,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
