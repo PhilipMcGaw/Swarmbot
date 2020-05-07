@@ -1073,19 +1073,6 @@ Wire Wire Line
 	5050 1350 5050 1400
 Wire Wire Line
 	5050 1400 4800 1400
-$Comp
-L Connector_Generic:Conn_01x04 J4
-U 1 1 5E986C3C
-P 5150 4000
-F 0 "J4" H 5230 3992 50  0000 L CNN
-F 1 "4 x OP" H 5230 3901 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5150 4000 50  0001 C CNN
-F 3 "~" H 5150 4000 50  0001 C CNN
-	1    5150 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 3900 4950 3900
 Wire Wire Line
 	4800 4000 4950 4000
 Wire Wire Line
@@ -1100,17 +1087,6 @@ Wire Wire Line
 	10500 4250 10650 4250
 Wire Wire Line
 	10500 4350 10650 4350
-$Comp
-L Sensor_Proximity:QRE1113 U8
-U 1 1 5E5F923D
-P 900 6950
-F 0 "U8" H 900 7267 50  0000 C CNN
-F 1 "QRE1113" H 900 7176 50  0000 C CNN
-F 2 "OptoDevice:OnSemi_CASE100CY" H 900 6750 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF" H 900 7050 50  0001 C CNN
-	1    900  6950
-	1    0    0    -1  
-$EndComp
 $Comp
 L Sensor_Proximity:QRE1113 U6
 U 1 1 5E5FB30B
@@ -1200,17 +1176,6 @@ F 3 "~" H 1400 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR035
-U 1 1 5E63A628
-P 550 2550
-F 0 "#PWR035" H 550 2400 50  0001 C CNN
-F 1 "+5V" H 565 2723 50  0000 C CNN
-F 2 "" H 550 2550 50  0001 C CNN
-F 3 "" H 550 2550 50  0001 C CNN
-	1    550  2550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR036
 U 1 1 5E63ABEC
 P 1400 2550
@@ -1253,115 +1218,6 @@ Text GLabel 1550 2950 2    50   Input ~ 0
 OpFL
 Wire Wire Line
 	1550 2950 1400 2950
-$Comp
-L Device:R_Small R12
-U 1 1 5E7513CC
-P 1400 6650
-F 0 "R12" H 1341 6604 50  0000 R CNN
-F 1 "10k" H 1341 6695 50  0000 R CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1400 6650 50  0001 C CNN
-F 3 "~" H 1400 6650 50  0001 C CNN
-	1    1400 6650
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R11
-U 1 1 5E7513D2
-P 550 6650
-F 0 "R11" H 608 6604 50  0000 L CNN
-F 1 "100" H 608 6695 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 550 6650 50  0001 C CNN
-F 3 "~" H 550 6650 50  0001 C CNN
-	1    550  6650
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR068
-U 1 1 5E7513D8
-P 550 7200
-F 0 "#PWR068" H 550 6950 50  0001 C CNN
-F 1 "GND" H 555 7027 50  0000 C CNN
-F 2 "" H 550 7200 50  0001 C CNN
-F 3 "" H 550 7200 50  0001 C CNN
-	1    550  7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR069
-U 1 1 5E7513DE
-P 1300 7200
-F 0 "#PWR069" H 1300 6950 50  0001 C CNN
-F 1 "GND" H 1305 7027 50  0000 C CNN
-F 2 "" H 1300 7200 50  0001 C CNN
-F 3 "" H 1300 7200 50  0001 C CNN
-	1    1300 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C17
-U 1 1 5E7513E4
-P 1400 7000
-F 0 "C17" H 1492 7046 50  0000 L CNN
-F 1 "100pF" H 1492 6955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1400 7000 50  0001 C CNN
-F 3 "~" H 1400 7000 50  0001 C CNN
-	1    1400 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR066
-U 1 1 5E7513EA
-P 550 6450
-F 0 "#PWR066" H 550 6300 50  0001 C CNN
-F 1 "+5V" H 565 6623 50  0000 C CNN
-F 2 "" H 550 6450 50  0001 C CNN
-F 3 "" H 550 6450 50  0001 C CNN
-	1    550  6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR067
-U 1 1 5E7513F0
-P 1400 6450
-F 0 "#PWR067" H 1400 6300 50  0001 C CNN
-F 1 "+5V" H 1415 6623 50  0000 C CNN
-F 2 "" H 1400 6450 50  0001 C CNN
-F 3 "" H 1400 6450 50  0001 C CNN
-	1    1400 6450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	550  6750 550  6850
-Wire Wire Line
-	550  6850 600  6850
-Wire Wire Line
-	600  7050 550  7050
-Wire Wire Line
-	550  7050 550  7200
-Wire Wire Line
-	1200 6850 1400 6850
-Wire Wire Line
-	1400 6850 1400 6900
-Wire Wire Line
-	550  6450 550  6550
-Wire Wire Line
-	1400 6750 1400 6850
-Connection ~ 1400 6850
-Wire Wire Line
-	1400 6450 1400 6550
-Wire Wire Line
-	1200 7050 1200 7200
-Wire Wire Line
-	1200 7200 1300 7200
-Wire Wire Line
-	1400 7100 1400 7200
-Wire Wire Line
-	1400 7200 1300 7200
-Connection ~ 1300 7200
-Text GLabel 1550 6850 2    50   Input ~ 0
-OpFR
-Wire Wire Line
-	1550 6850 1400 6850
 $Comp
 L Device:R_Small R8
 U 1 1 5E7C07DD
@@ -1415,17 +1271,6 @@ F 1 "100pF" H 1492 4355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1400 4400 50  0001 C CNN
 F 3 "~" H 1400 4400 50  0001 C CNN
 	1    1400 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR048
-U 1 1 5E7C07FB
-P 550 3850
-F 0 "#PWR048" H 550 3700 50  0001 C CNN
-F 1 "+5V" H 565 4023 50  0000 C CNN
-F 2 "" H 550 3850 50  0001 C CNN
-F 3 "" H 550 3850 50  0001 C CNN
-	1    550  3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1524,17 +1369,6 @@ F 1 "100pF" H 1492 5605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1400 5650 50  0001 C CNN
 F 3 "~" H 1400 5650 50  0001 C CNN
 	1    1400 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR058
-U 1 1 5E7D8F25
-P 550 5100
-F 0 "#PWR058" H 550 4950 50  0001 C CNN
-F 1 "+5V" H 565 5273 50  0000 C CNN
-F 2 "" H 550 5100 50  0001 C CNN
-F 3 "" H 550 5100 50  0001 C CNN
-	1    550  5100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2038,4 +1872,125 @@ Text GLabel 9350 3750 0    50   Input ~ 0
 M2PWM
 Text GLabel 9350 3650 0    50   Input ~ 0
 M1PWM
+Wire Wire Line
+	1550 6850 1400 6850
+Text GLabel 1550 6850 2    50   Input ~ 0
+OpFR
+Connection ~ 1300 7200
+Wire Wire Line
+	1400 7200 1300 7200
+Wire Wire Line
+	1400 7100 1400 7200
+Wire Wire Line
+	1200 7200 1300 7200
+Wire Wire Line
+	1200 7050 1200 7200
+Wire Wire Line
+	1400 6450 1400 6550
+Connection ~ 1400 6850
+Wire Wire Line
+	1400 6750 1400 6850
+Wire Wire Line
+	550  6450 550  6550
+Wire Wire Line
+	1400 6850 1400 6900
+Wire Wire Line
+	1200 6850 1400 6850
+Wire Wire Line
+	550  7050 550  7200
+Wire Wire Line
+	600  7050 550  7050
+Wire Wire Line
+	550  6850 600  6850
+Wire Wire Line
+	550  6750 550  6850
+$Comp
+L power:+5V #PWR067
+U 1 1 5E7513F0
+P 1400 6450
+F 0 "#PWR067" H 1400 6300 50  0001 C CNN
+F 1 "+5V" H 1415 6623 50  0000 C CNN
+F 2 "" H 1400 6450 50  0001 C CNN
+F 3 "" H 1400 6450 50  0001 C CNN
+	1    1400 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 5E7513E4
+P 1400 7000
+F 0 "C17" H 1492 7046 50  0000 L CNN
+F 1 "100pF" H 1492 6955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1400 7000 50  0001 C CNN
+F 3 "~" H 1400 7000 50  0001 C CNN
+	1    1400 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR069
+U 1 1 5E7513DE
+P 1300 7200
+F 0 "#PWR069" H 1300 6950 50  0001 C CNN
+F 1 "GND" H 1305 7027 50  0000 C CNN
+F 2 "" H 1300 7200 50  0001 C CNN
+F 3 "" H 1300 7200 50  0001 C CNN
+	1    1300 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR068
+U 1 1 5E7513D8
+P 550 7200
+F 0 "#PWR068" H 550 6950 50  0001 C CNN
+F 1 "GND" H 555 7027 50  0000 C CNN
+F 2 "" H 550 7200 50  0001 C CNN
+F 3 "" H 550 7200 50  0001 C CNN
+	1    550  7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 5E7513D2
+P 550 6650
+F 0 "R11" H 608 6604 50  0000 L CNN
+F 1 "100" H 608 6695 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 550 6650 50  0001 C CNN
+F 3 "~" H 550 6650 50  0001 C CNN
+	1    550  6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R12
+U 1 1 5E7513CC
+P 1400 6650
+F 0 "R12" H 1341 6604 50  0000 R CNN
+F 1 "10k" H 1341 6695 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1400 6650 50  0001 C CNN
+F 3 "~" H 1400 6650 50  0001 C CNN
+	1    1400 6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Sensor_Proximity:QRE1113 U8
+U 1 1 5E5F923D
+P 900 6950
+F 0 "U8" H 900 7267 50  0000 C CNN
+F 1 "QRE1113" H 900 7176 50  0000 C CNN
+F 2 "OptoDevice:OnSemi_CASE100CY" H 900 6750 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF" H 900 7050 50  0001 C CNN
+	1    900  6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3900 4950 3900
+Text GLabel 4950 3900 2    50   Input ~ 0
+IR
+Text GLabel 550  2550 1    50   Input ~ 0
+IR
+Text GLabel 550  3850 1    50   Input ~ 0
+IR
+Text GLabel 550  5100 1    50   Input ~ 0
+IR
+Text GLabel 550  6450 1    50   Input ~ 0
+IR
 $EndSCHEMATC
