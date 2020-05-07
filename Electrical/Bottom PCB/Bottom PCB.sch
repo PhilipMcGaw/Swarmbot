@@ -438,8 +438,6 @@ F 3 "" H 8400 5550 50  0001 C CNN
 $EndComp
 Text GLabel 9350 3350 0    50   Input ~ 0
 Servo1
-Text GLabel 9350 3850 0    50   Input ~ 0
-Servo3
 Text GLabel 9350 3950 0    50   Input ~ 0
 Servo4
 $Comp
@@ -880,10 +878,6 @@ Wire Wire Line
 	6800 3700 6800 3800
 Wire Wire Line
 	6800 3800 6650 3800
-Text GLabel 9350 3650 0    50   Input ~ 0
-M1PWM
-Text GLabel 9350 3750 0    50   Input ~ 0
-M2PWM
 Text GLabel 5300 3300 0    50   Input ~ 0
 M2PWM
 Text GLabel 5300 3200 0    50   Input ~ 0
@@ -1527,7 +1521,7 @@ U 1 1 5E7D8F1F
 P 1400 5650
 F 0 "C16" H 1492 5696 50  0000 L CNN
 F 1 "100pF" H 1492 5605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 1400 5650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1400 5650 50  0001 C CNN
 F 3 "~" H 1400 5650 50  0001 C CNN
 	1    1400 5650
 	1    0    0    -1  
@@ -2036,4 +2030,12 @@ Wire Wire Line
 Wire Wire Line
 	11100 800  11250 800 
 Connection ~ 11100 800 
+Wire Wire Line
+	10500 3950 10650 3950
+Text GLabel 9350 3850 0    50   Input ~ 0
+Servo3
+Text GLabel 9350 3750 0    50   Input ~ 0
+M2PWM
+Text GLabel 9350 3650 0    50   Input ~ 0
+M1PWM
 $EndSCHEMATC
