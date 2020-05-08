@@ -2,4 +2,6 @@
   (lib (name DF-M_Series_Micro_Switches)(type Legacy)(uri "${KIPRJMOD}/Libraries/DF-M Series Micro Switches/DF-M Series Micro Switches.lib")(options "")(descr ""))
   (lib (name HC-SR04)(type Legacy)(uri "${KIPRJMOD}/Libraries/HC-SR04 - Ultrasonic Sensor/HC-SR04.lib")(options "")(descr ""))
   (lib (name SquashedFly_Logo)(type Legacy)(uri "${KIPRJMOD}/Libraries/SquashedFly Logo/SquashedFly Logo.lib")(options "")(descr ""))
+  (lib (name esp32-wrover)(type Legacy)(uri ${KIPRJMOD}/Libraries/esp32-wrover/esp32-wrover.lib)(options "")(descr ""))
+  (lib (name TC2030-IDC)(type Legacy)(uri ${KIPRJMOD}/Libraries/TC2030-IDC/TC2030-IDC.lib)(options "")(descr ""))
 )

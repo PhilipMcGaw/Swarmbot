@@ -1,3 +1,5 @@
 (fp_lib_table
   (lib (name "SquashedFly Logo")(type KiCad)(uri "${KIPRJMOD}/Libraries/SquashedFly Logo/SquashedFly Logo.pretty")(options "")(descr ""))
+  (lib (name esp32-wrover)(type KiCad)(uri ${KIPRJMOD}/Libraries/esp32-wrover/esp32-wrover.pretty)(options "")(descr ""))
+  (lib (name TC2030-IDC)(type KiCad)(uri ${KIPRJMOD}/Libraries/TC2030-IDC)(options "")(descr ""))
 )
