@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -36,17 +36,6 @@ F 3 "" H 1100 2100 50  0001 C CNN
 	1    1100 2100
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0115
-U 1 1 5DA4321E
-P 550 1650
-F 0 "#PWR0115" H 550 1500 50  0001 C CNN
-F 1 "+5V" H 565 1823 50  0000 C CNN
-F 2 "" H 550 1650 50  0001 C CNN
-F 3 "" H 550 1650 50  0001 C CNN
-	1    550  1650
-	1    0    0    -1  
-$EndComp
 Text GLabel 1300 1800 2    50   Input ~ 0
 SwFR
 $Comp
@@ -69,17 +58,6 @@ F 1 "GND" H 1105 1027 50  0000 C CNN
 F 2 "" H 1100 1200 50  0001 C CNN
 F 3 "" H 1100 1200 50  0001 C CNN
 	1    1100 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0106
-U 1 1 5DA58E34
-P 550 750
-F 0 "#PWR0106" H 550 600 50  0001 C CNN
-F 1 "+5V" H 565 923 50  0000 C CNN
-F 2 "" H 550 750 50  0001 C CNN
-F 3 "" H 550 750 50  0001 C CNN
-	1    550  750 
 	1    0    0    -1  
 $EndComp
 Text GLabel 1300 900  2    50   Input ~ 0
@@ -388,17 +366,6 @@ F 3 "~" H 1400 3100 50  0001 C CNN
 	1    1400 3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0127
-U 1 1 5E63ABEC
-P 1400 2550
-F 0 "#PWR0127" H 1400 2400 50  0001 C CNN
-F 1 "+5V" H 1415 2723 50  0000 C CNN
-F 2 "" H 1400 2550 50  0001 C CNN
-F 3 "" H 1400 2550 50  0001 C CNN
-	1    1400 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	550  2850 550  2950
 Wire Wire Line
@@ -486,17 +453,6 @@ F 3 "~" H 1400 4400 50  0001 C CNN
 	1    1400 4400
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0134
-U 1 1 5E7C0801
-P 1400 3850
-F 0 "#PWR0134" H 1400 3700 50  0001 C CNN
-F 1 "+5V" H 1415 4023 50  0000 C CNN
-F 2 "" H 1400 3850 50  0001 C CNN
-F 3 "" H 1400 3850 50  0001 C CNN
-	1    1400 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	550  4150 550  4250
 Wire Wire Line
@@ -582,17 +538,6 @@ F 1 "100pF" H 1492 5605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1400 5650 50  0001 C CNN
 F 3 "~" H 1400 5650 50  0001 C CNN
 	1    1400 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0145
-U 1 1 5E7D8F2B
-P 1400 5100
-F 0 "#PWR0145" H 1400 4950 50  0001 C CNN
-F 1 "+5V" H 1415 5273 50  0000 C CNN
-F 2 "" H 1400 5100 50  0001 C CNN
-F 3 "" H 1400 5100 50  0001 C CNN
-	1    1400 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -808,17 +753,6 @@ Wire Wire Line
 Wire Wire Line
 	550  6750 550  6850
 $Comp
-L power:+5V #PWR0149
-U 1 1 5E7513F0
-P 1400 6450
-F 0 "#PWR0149" H 1400 6300 50  0001 C CNN
-F 1 "+5V" H 1415 6623 50  0000 C CNN
-F 2 "" H 1400 6450 50  0001 C CNN
-F 3 "" H 1400 6450 50  0001 C CNN
-	1    1400 6450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C111
 U 1 1 5E7513E4
 P 1400 7000
@@ -893,13 +827,13 @@ IR
 Text GLabel 550  6450 1    50   Input ~ 0
 IR
 $Sheet
-S 10350 2100 850  600 
+S 10400 2100 850  600 
 U 5EBB31C5
 F0 "ESP32-WROVER" 50
 F1 "ESP32-WROVER.sch" 50
 $EndSheet
 $Sheet
-S 10350 3350 850  600 
+S 9350 2100 500  250 
 U 5ED67F7E
 F0 "Bat Managment" 50
 F1 "Bat Managment.sch" 50
@@ -1306,14 +1240,98 @@ Wire Wire Line
 Wire Wire Line
 	5200 2400 5650 2400
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0102
 U 1 1 5EE845C0
 P 6950 4900
-F 0 "#PWR?" H 6950 4750 50  0001 C CNN
+F 0 "#PWR0102" H 6950 4750 50  0001 C CNN
 F 1 "+5V" H 6965 5073 50  0000 C CNN
 F 2 "" H 6950 4900 50  0001 C CNN
 F 3 "" H 6950 4900 50  0001 C CNN
 	1    6950 4900
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EBBD63B
+P 550 750
+AR Path="/5EBBD63B" Ref="#PWR?"  Part="1" 
+AR Path="/5EBB31C5/5EBBD63B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 550 600 50  0001 C CNN
+F 1 "+3.3V" H 565 923 50  0000 C CNN
+F 2 "" H 550 750 50  0001 C CNN
+F 3 "" H 550 750 50  0001 C CNN
+	1    550  750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EBBDE12
+P 550 1650
+AR Path="/5EBBDE12" Ref="#PWR?"  Part="1" 
+AR Path="/5EBB31C5/5EBBDE12" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 550 1500 50  0001 C CNN
+F 1 "+3.3V" H 565 1823 50  0000 C CNN
+F 2 "" H 550 1650 50  0001 C CNN
+F 3 "" H 550 1650 50  0001 C CNN
+	1    550  1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EBBE41D
+P 1400 2550
+AR Path="/5EBBE41D" Ref="#PWR?"  Part="1" 
+AR Path="/5EBB31C5/5EBBE41D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1400 2400 50  0001 C CNN
+F 1 "+3.3V" H 1415 2723 50  0000 C CNN
+F 2 "" H 1400 2550 50  0001 C CNN
+F 3 "" H 1400 2550 50  0001 C CNN
+	1    1400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EBBEC39
+P 1400 3850
+AR Path="/5EBBEC39" Ref="#PWR?"  Part="1" 
+AR Path="/5EBB31C5/5EBBEC39" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1400 3700 50  0001 C CNN
+F 1 "+3.3V" H 1415 4023 50  0000 C CNN
+F 2 "" H 1400 3850 50  0001 C CNN
+F 3 "" H 1400 3850 50  0001 C CNN
+	1    1400 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EBBF53B
+P 1400 5100
+AR Path="/5EBBF53B" Ref="#PWR?"  Part="1" 
+AR Path="/5EBB31C5/5EBBF53B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1400 4950 50  0001 C CNN
+F 1 "+3.3V" H 1415 5273 50  0000 C CNN
+F 2 "" H 1400 5100 50  0001 C CNN
+F 3 "" H 1400 5100 50  0001 C CNN
+	1    1400 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EBBFB46
+P 1400 6450
+AR Path="/5EBBFB46" Ref="#PWR?"  Part="1" 
+AR Path="/5EBB31C5/5EBBFB46" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1400 6300 50  0001 C CNN
+F 1 "+3.3V" H 1415 6623 50  0000 C CNN
+F 2 "" H 1400 6450 50  0001 C CNN
+F 3 "" H 1400 6450 50  0001 C CNN
+	1    1400 6450
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 10300 2950 500  350 
+U 5EBA64E8
+F0 "Power Management" 50
+F1 "Power Management.sch" 50
+$EndSheet
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -210,4 +210,73 @@ F 3 "" H 1800 2600 50  0001 C CNN
 	1    1800 2600
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5EBBDBE9
+P 1750 4400
+AR Path="/5EBBDBE9" Ref="J?"  Part="1" 
+AR Path="/5ED67F7E/5EBBDBE9" Ref="J301"  Part="1" 
+F 0 "J301" H 1830 4392 50  0000 L CNN
+F 1 "Battery" H 1830 4301 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 1750 4400 50  0001 C CNN
+F 3 "~" H 1750 4400 50  0001 C CNN
+	1    1750 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3V8 #PWR?
+U 1 1 5EBC1737
+P 2300 4150
+AR Path="/5EBB31C5/5EBC1737" Ref="#PWR?"  Part="1" 
+AR Path="/5ED67F7E/5EBC1737" Ref="#PWR0308"  Part="1" 
+F 0 "#PWR0308" H 2300 4000 50  0001 C CNN
+F 1 "+3V8" H 2315 4323 50  0000 C CNN
+F 2 "" H 2300 4150 50  0001 C CNN
+F 3 "" H 2300 4150 50  0001 C CNN
+	1    2300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5EBC1DA3
+P 2050 4150
+AR Path="/5EBC1DA3" Ref="#PWR?"  Part="1" 
+AR Path="/5ED67F7E/5EBC1DA3" Ref="#PWR0307"  Part="1" 
+F 0 "#PWR0307" H 2050 4000 50  0001 C CNN
+F 1 "+BATT" H 2065 4323 50  0000 C CNN
+F 2 "" H 2050 4150 50  0001 C CNN
+F 3 "" H 2050 4150 50  0001 C CNN
+	1    2050 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EBC24CC
+P 2050 4750
+AR Path="/5EBC24CC" Ref="#PWR?"  Part="1" 
+AR Path="/5ED67F7E/5EBC24CC" Ref="#PWR0309"  Part="1" 
+F 0 "#PWR0309" H 2050 4500 50  0001 C CNN
+F 1 "GND" H 2055 4577 50  0000 C CNN
+F 2 "" H 2050 4750 50  0001 C CNN
+F 3 "" H 2050 4750 50  0001 C CNN
+	1    2050 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4150 2050 4300
+Wire Wire Line
+	2050 4300 1950 4300
+Wire Wire Line
+	1950 4400 2300 4400
+Wire Wire Line
+	1950 4500 2300 4500
+Wire Wire Line
+	2300 4150 2300 4400
+Connection ~ 2300 4400
+Wire Wire Line
+	2300 4400 2300 4500
+Wire Wire Line
+	1950 4600 2050 4600
+Wire Wire Line
+	2050 4600 2050 4750
 $EndSCHEMATC
