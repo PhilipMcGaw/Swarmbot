@@ -1532,12 +1532,12 @@ IR
 $Comp
 L Interface_Expansion:MCP23017_SO U108
 U 1 1 5F0E70CE
-P 5450 5950
-F 0 "U108" H 5450 7231 50  0000 C CNN
-F 1 "MCP23017_SO" H 5450 7140 50  0000 C CNN
-F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 5650 4950 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 5650 4850 50  0001 L CNN
-	1    5450 5950
+P 9300 5350
+F 0 "U108" H 9300 6631 50  0000 C CNN
+F 1 "MCP23017_SO" H 9300 6540 50  0000 C CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 9500 4350 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 9500 4250 50  0001 L CNN
+	1    9300 5350
 	1    0    0    -1  
 $EndComp
 $Sheet
@@ -1552,4 +1552,216 @@ U 5ED67F7E
 F0 "Bat Managment" 50
 F1 "Bat Managment.sch" 50
 $EndSheet
+Wire Wire Line
+	8600 4550 8450 4550
+Wire Wire Line
+	8600 4650 8450 4650
+Text GLabel 8450 4550 0    50   Input ~ 0
+SDA
+Text GLabel 8450 4650 0    50   Input ~ 0
+SCL
+$Comp
+L power:GND #PWR?
+U 1 1 5EC22D13
+P 9300 6500
+F 0 "#PWR?" H 9300 6250 50  0001 C CNN
+F 1 "GND" H 9305 6327 50  0000 C CNN
+F 2 "" H 9300 6500 50  0001 C CNN
+F 3 "" H 9300 6500 50  0001 C CNN
+	1    9300 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EC2D730
+P 9300 4000
+AR Path="/5EC2D730" Ref="#PWR?"  Part="1" 
+AR Path="/5EBB31C5/5EC2D730" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9300 3850 50  0001 C CNN
+F 1 "+3.3V" H 9315 4173 50  0000 C CNN
+F 2 "" H 9300 4000 50  0001 C CNN
+F 3 "" H 9300 4000 50  0001 C CNN
+	1    9300 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 4250 9300 4000
+Wire Wire Line
+	9300 6500 9300 6450
+$Comp
+L power:GND #PWR?
+U 1 1 5EC63878
+P 8450 6500
+F 0 "#PWR?" H 8450 6250 50  0001 C CNN
+F 1 "GND" H 8455 6327 50  0000 C CNN
+F 2 "" H 8450 6500 50  0001 C CNN
+F 3 "" H 8450 6500 50  0001 C CNN
+	1    8450 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 5950 7950 5950
+Wire Wire Line
+	8600 6050 8200 6050
+Wire Wire Line
+	8600 6150 8450 6150
+$Comp
+L Device:R_Small R?
+U 1 1 5EC9C53C
+P 8450 5800
+F 0 "R?" H 8391 5754 50  0000 R CNN
+F 1 "4k7" H 8391 5845 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8450 5800 50  0001 C CNN
+F 3 "~" H 8450 5800 50  0001 C CNN
+	1    8450 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EC9D4EB
+P 8200 5800
+F 0 "R?" H 8141 5754 50  0000 R CNN
+F 1 "4k7" H 8141 5845 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8200 5800 50  0001 C CNN
+F 3 "~" H 8200 5800 50  0001 C CNN
+	1    8200 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EC9D878
+P 7950 5800
+F 0 "R?" H 7891 5754 50  0000 R CNN
+F 1 "4k7" H 7891 5845 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7950 5800 50  0001 C CNN
+F 3 "~" H 7950 5800 50  0001 C CNN
+	1    7950 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EC9DE7B
+P 7950 5050
+AR Path="/5EC9DE7B" Ref="#PWR?"  Part="1" 
+AR Path="/5EBB31C5/5EC9DE7B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7950 4900 50  0001 C CNN
+F 1 "+3.3V" H 7965 5223 50  0000 C CNN
+F 2 "" H 7950 5050 50  0001 C CNN
+F 3 "" H 7950 5050 50  0001 C CNN
+	1    7950 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EC9E5C8
+P 8200 5050
+AR Path="/5EC9E5C8" Ref="#PWR?"  Part="1" 
+AR Path="/5EBB31C5/5EC9E5C8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8200 4900 50  0001 C CNN
+F 1 "+3.3V" H 8215 5223 50  0000 C CNN
+F 2 "" H 8200 5050 50  0001 C CNN
+F 3 "" H 8200 5050 50  0001 C CNN
+	1    8200 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EC9EA1E
+P 8450 5050
+AR Path="/5EC9EA1E" Ref="#PWR?"  Part="1" 
+AR Path="/5EBB31C5/5EC9EA1E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8450 4900 50  0001 C CNN
+F 1 "+3.3V" H 8465 5223 50  0000 C CNN
+F 2 "" H 8450 5050 50  0001 C CNN
+F 3 "" H 8450 5050 50  0001 C CNN
+	1    8450 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EC9EEA2
+P 8200 6500
+F 0 "#PWR?" H 8200 6250 50  0001 C CNN
+F 1 "GND" H 8205 6327 50  0000 C CNN
+F 2 "" H 8200 6500 50  0001 C CNN
+F 3 "" H 8200 6500 50  0001 C CNN
+	1    8200 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EC9F293
+P 7950 6500
+F 0 "#PWR?" H 7950 6250 50  0001 C CNN
+F 1 "GND" H 7955 6327 50  0000 C CNN
+F 2 "" H 7950 6500 50  0001 C CNN
+F 3 "" H 7950 6500 50  0001 C CNN
+	1    7950 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5ED31093
+P 7950 6350
+F 0 "JP?" V 7904 6398 50  0000 L CNN
+F 1 "A2" V 7995 6398 50  0000 L CNN
+F 2 "" H 7950 6350 50  0001 C CNN
+F 3 "~" H 7950 6350 50  0001 C CNN
+	1    7950 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5ED31914
+P 8200 6350
+F 0 "JP?" V 8154 6398 50  0000 L CNN
+F 1 "A1" V 8245 6398 50  0000 L CNN
+F 2 "" H 8200 6350 50  0001 C CNN
+F 3 "~" H 8200 6350 50  0001 C CNN
+	1    8200 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5ED31D98
+P 8450 6350
+F 0 "JP?" V 8404 6398 50  0000 L CNN
+F 1 "A0" V 8495 6398 50  0000 L CNN
+F 2 "" H 8450 6350 50  0001 C CNN
+F 3 "~" H 8450 6350 50  0001 C CNN
+	1    8450 6350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 5900 7950 5950
+Wire Wire Line
+	7950 5950 7950 6250
+Connection ~ 7950 5950
+Wire Wire Line
+	8200 5900 8200 6050
+Wire Wire Line
+	8200 6050 8200 6250
+Connection ~ 8200 6050
+Wire Wire Line
+	8450 6250 8450 6150
+Wire Wire Line
+	8450 6150 8450 5900
+Connection ~ 8450 6150
+Wire Wire Line
+	8450 6500 8450 6450
+Wire Wire Line
+	8200 6500 8200 6450
+Wire Wire Line
+	7950 6500 7950 6450
+Wire Wire Line
+	8450 5050 8450 5450
+Wire Wire Line
+	8200 5050 8200 5700
+Wire Wire Line
+	7950 5050 7950 5700
+Wire Wire Line
+	8600 5450 8450 5450
+Connection ~ 8450 5450
+Wire Wire Line
+	8450 5450 8450 5700
 $EndSCHEMATC
