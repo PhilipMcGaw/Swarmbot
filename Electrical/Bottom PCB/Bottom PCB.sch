@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Bottom PCB-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1977,4 +1976,121 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 5400 4850 
 	1    5200 5950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x06_Male J?
+U 1 1 5EBE922C
+P 2400 6650
+F 0 "J?" H 2508 7031 50  0000 C CNN
+F 1 "PROG" H 2508 6940 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2400 6650 50  0001 C CNN
+F 3 "~" H 2400 6650 50  0001 C CNN
+	1    2400 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EBEB3F9
+P 2600 6450
+F 0 "#PWR?" H 2600 6200 50  0001 C CNN
+F 1 "GND" H 2605 6277 50  0000 C CNN
+F 2 "" H 2600 6450 50  0001 C CNN
+F 3 "" H 2600 6450 50  0001 C CNN
+	1    2600 6450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 6750 2850 6750
+Wire Wire Line
+	2600 6850 2850 6850
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EC6FB03
+P 2600 6650
+F 0 "#PWR?" H 2600 6500 50  0001 C CNN
+F 1 "+3.3V" H 2615 6823 50  0000 C CNN
+F 2 "" H 2600 6650 50  0001 C CNN
+F 3 "" H 2600 6650 50  0001 C CNN
+	1    2600 6650
+	0    1    1    0   
+$EndComp
+Text GLabel 2850 6850 2    49   Input ~ 0
+TX
+Text GLabel 2850 6750 2    49   Input ~ 0
+RX
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 5EC84C0A
+P 4050 7450
+F 0 "Q?" V 4285 7450 50  0000 C CNN
+F 1 "BC847" V 4376 7450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4250 7375 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 4050 7450 50  0001 L CNN
+	1    4050 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 5EC854CB
+P 3300 7450
+F 0 "Q?" V 3535 7450 50  0000 C CNN
+F 1 "BC847" V 3626 7450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3500 7375 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3300 7450 50  0001 L CNN
+	1    3300 7450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 6550 4050 6950
+Wire Wire Line
+	2600 6550 3100 6550
+Wire Wire Line
+	3100 7550 3100 6550
+Connection ~ 3100 6550
+Wire Wire Line
+	3100 6550 4050 6550
+Wire Wire Line
+	3850 6950 3850 7550
+Wire Wire Line
+	2600 6950 3300 6950
+Connection ~ 3300 6950
+Wire Wire Line
+	3300 6950 3850 6950
+Wire Wire Line
+	3500 7550 3650 7550
+Wire Wire Line
+	4250 7550 4400 7550
+$Comp
+L Device:R R?
+U 1 1 5ED6B6F5
+P 3300 7100
+F 0 "R?" H 3370 7146 50  0000 L CNN
+F 1 "10K" H 3370 7055 50  0000 L CNN
+F 2 "" V 3230 7100 50  0001 C CNN
+F 3 "~" H 3300 7100 50  0001 C CNN
+	1    3300 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5ED6BE05
+P 4050 7100
+F 0 "R?" H 4120 7146 50  0000 L CNN
+F 1 "10K" H 4120 7055 50  0000 L CNN
+F 2 "" V 3980 7100 50  0001 C CNN
+F 3 "~" H 4050 7100 50  0001 C CNN
+	1    4050 7100
+	1    0    0    -1  
+$EndComp
+Text Label 2700 6950 0    50   ~ 0
+DTR
+Text Label 2900 6550 0    50   ~ 0
+CTS
+Text Label 3650 7550 0    50   ~ 0
+EN
+Text Label 4400 7550 0    50   ~ 0
+GPIO0
+Text Label 9200 3000 2    50   ~ 0
+EN
+Text Label 10950 4200 0    50   ~ 0
+GPIO0
 $EndSCHEMATC
