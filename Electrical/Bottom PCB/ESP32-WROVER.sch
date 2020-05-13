@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -311,9 +311,9 @@ Wire Wire Line
 	1350 4300 1600 4300
 Wire Wire Line
 	1350 4400 1750 4400
-Text GLabel 2150 4500 2    49   Input ~ 0
+Text GLabel 1750 4500 2    49   Input ~ 0
 RX
-Text GLabel 2150 4400 2    49   Input ~ 0
+Text GLabel 1750 4400 2    49   Input ~ 0
 TX
 $Comp
 L power:GND #PWR?
@@ -330,23 +330,8 @@ F 3 "" H 1600 4900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1350 4200 1950 4200
-$Comp
-L power:+BATT #PWR?
-U 1 1 5EC35309
-P 1700 3750
-AR Path="/5EC35309" Ref="#PWR?"  Part="1" 
-AR Path="/5EBB31C5/5EC35309" Ref="#PWR0215"  Part="1" 
-F 0 "#PWR0215" H 1700 3600 50  0001 C CNN
-F 1 "+BATT" H 1715 3923 50  0000 C CNN
-F 2 "" H 1700 3750 50  0001 C CNN
-F 3 "" H 1700 3750 50  0001 C CNN
-	1    1700 3750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1600 4300 1600 4600
-Wire Wire Line
-	1350 4100 1700 4100
 Wire Wire Line
 	1950 4200 1950 3750
 Wire Wire Line
@@ -356,8 +341,6 @@ Wire Wire Line
 	1600 4600 1600 4900
 Wire Wire Line
 	1350 4500 1750 4500
-Wire Wire Line
-	1700 3750 1700 4100
 $Comp
 L Connector_Generic:Conn_01x06 J?
 U 1 1 5EBF7F6B
@@ -383,28 +366,6 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1150 4200 50 
 F 3 "~" H 1150 4200 50  0001 C CNN
 	1    1150 4200
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Jumper:Jumper_2_Bridged JP201
-U 1 1 5EC5A549
-P 1950 4400
-F 0 "JP201" H 1950 4595 50  0001 C CNN
-F 1 "Jumper_2_Bridged" H 1950 4504 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 1950 4400 50  0001 C CNN
-F 3 "~" H 1950 4400 50  0001 C CNN
-	1    1950 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:Jumper_2_Bridged JP202
-U 1 1 5EC5AE21
-P 1950 4500
-F 0 "JP202" H 1950 4695 50  0001 C CNN
-F 1 "Jumper_2_Bridged" H 1950 4604 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 1950 4500 50  0001 C CNN
-F 3 "~" H 1950 4500 50  0001 C CNN
-	1    1950 4500
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
@@ -578,25 +539,6 @@ Wire Wire Line
 	10650 850  10650 900 
 Wire Wire Line
 	10300 850  10300 900 
-Text Label 1350 4500 0    50   ~ 0
-RX_sw
-Text Label 1350 4400 0    50   ~ 0
-TX_sw
-$Comp
-L power:+3V8 #PWR0214
-U 1 1 5ED4BDA3
-P 1450 3750
-F 0 "#PWR0214" H 1450 3600 50  0001 C CNN
-F 1 "+3V8" H 1465 3923 50  0000 C CNN
-F 2 "" H 1450 3750 50  0001 C CNN
-F 3 "" H 1450 3750 50  0001 C CNN
-	1    1450 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1450 3750 1450 4000
-Wire Wire Line
-	1450 4000 1350 4000
 Wire Wire Line
 	1600 4300 1600 3900
 Wire Wire Line
