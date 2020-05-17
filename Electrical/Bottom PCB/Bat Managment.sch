@@ -35,7 +35,7 @@ AR Path="/5ED9FE2E" Ref="R?"  Part="1"
 AR Path="/5ED67F7E/5ED9FE2E" Ref="R303"  Part="1" 
 F 0 "R303" V 5004 1100 50  0000 C CNN
 F 1 "10k" V 5095 1100 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5200 1100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5200 1100 50  0001 C CNN
 F 3 "~" H 5200 1100 50  0001 C CNN
 	1    5200 1100
 	-1   0    0    1   
@@ -48,7 +48,7 @@ AR Path="/5ED9FE34" Ref="R?"  Part="1"
 AR Path="/5ED67F7E/5ED9FE34" Ref="R301"  Part="1" 
 F 0 "R301" V 5004 800 50  0000 C CNN
 F 1 "47k" V 5095 800 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5200 800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5200 800 50  0001 C CNN
 F 3 "~" H 5200 800 50  0001 C CNN
 	1    5200 800 
 	-1   0    0    1   
@@ -78,7 +78,7 @@ AR Path="/5EDA200B" Ref="R?"  Part="1"
 AR Path="/5ED67F7E/5EDA200B" Ref="R304"  Part="1" 
 F 0 "R304" V 6204 1100 50  0000 C CNN
 F 1 "10k" V 6295 1100 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6400 1100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6400 1100 50  0001 C CNN
 F 3 "~" H 6400 1100 50  0001 C CNN
 	1    6400 1100
 	-1   0    0    1   
@@ -91,7 +91,7 @@ AR Path="/5EDA2011" Ref="R?"  Part="1"
 AR Path="/5ED67F7E/5EDA2011" Ref="R302"  Part="1" 
 F 0 "R302" V 6204 800 50  0000 C CNN
 F 1 "47k" V 6295 800 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6400 800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6400 800 50  0001 C CNN
 F 3 "~" H 6400 800 50  0001 C CNN
 	1    6400 800 
 	-1   0    0    1   
@@ -113,7 +113,7 @@ AR Path="/5EDA201D" Ref="C?"  Part="1"
 AR Path="/5ED67F7E/5EDA201D" Ref="C306"  Part="1" 
 F 0 "C306" H 6842 1146 50  0000 L CNN
 F 1 "10uF" H 6842 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6750 1100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6750 1100 50  0001 C CNN
 F 3 "~" H 6750 1100 50  0001 C CNN
 	1    6750 1100
 	1    0    0    -1  
@@ -141,14 +141,14 @@ Connection ~ 6750 950
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 5EBBDBE9
-P 1400 1050
+P 1250 1050
 AR Path="/5EBBDBE9" Ref="J?"  Part="1" 
 AR Path="/5ED67F7E/5EBBDBE9" Ref="J301"  Part="1" 
-F 0 "J301" H 1480 1042 50  0000 L CNN
-F 1 "Battery" H 1480 951 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 1400 1050 50  0001 C CNN
-F 3 "~" H 1400 1050 50  0001 C CNN
-	1    1400 1050
+F 0 "J301" H 1330 1042 50  0000 L CNN
+F 1 "Battery" H 1330 951 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 1250 1050 50  0001 C CNN
+F 3 "~" H 1250 1050 50  0001 C CNN
+	1    1250 1050
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -165,15 +165,15 @@ F 3 "" H 1700 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 950  1700 950 
+	1450 950  1700 950 
 Wire Wire Line
-	1600 1050 1950 1050
+	1450 1050 1950 1050
 Wire Wire Line
-	1600 1150 1950 1150
+	1450 1150 1950 1150
 Wire Wire Line
 	1950 1050 1950 1150
 Wire Wire Line
-	1600 1250 1700 1250
+	1450 1250 1700 1250
 Wire Wire Line
 	1700 1250 1700 1450
 $Comp
@@ -208,7 +208,7 @@ AR Path="/5EBBD1E4" Ref="C?"  Part="1"
 AR Path="/5ED67F7E/5EBBD1E4" Ref="C302"  Part="1" 
 F 0 "C302" H 3392 1146 50  0000 L CNN
 F 1 "10uF" H 3392 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3300 1100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3300 1100 50  0001 C CNN
 F 3 "~" H 3300 1100 50  0001 C CNN
 	1    3300 1100
 	1    0    0    -1  
@@ -221,7 +221,7 @@ AR Path="/5EBBDA00" Ref="C?"  Part="1"
 AR Path="/5ED67F7E/5EBBDA00" Ref="C301"  Part="1" 
 F 0 "C301" H 2992 1146 50  0000 L CNN
 F 1 "100pF" H 2992 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2900 1100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2900 1100 50  0001 C CNN
 F 3 "~" H 2900 1100 50  0001 C CNN
 	1    2900 1100
 	1    0    0    -1  
@@ -275,7 +275,7 @@ AR Path="/5EBC21D7" Ref="C?"  Part="1"
 AR Path="/5ED67F7E/5EBC21D7" Ref="C303"  Part="1" 
 F 0 "C303" H 4292 1146 50  0000 L CNN
 F 1 "10uF" H 4292 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4200 1100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4200 1100 50  0001 C CNN
 F 3 "~" H 4200 1100 50  0001 C CNN
 	1    4200 1100
 	1    0    0    -1  
@@ -288,7 +288,7 @@ AR Path="/5EBC29C5" Ref="C?"  Part="1"
 AR Path="/5ED67F7E/5EBC29C5" Ref="C304"  Part="1" 
 F 0 "C304" H 4692 1146 50  0000 L CNN
 F 1 "100pF" H 4692 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4600 1100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4600 1100 50  0001 C CNN
 F 3 "~" H 4600 1100 50  0001 C CNN
 	1    4600 1100
 	1    0    0    -1  
@@ -416,7 +416,7 @@ AR Path="/5ED9FE40" Ref="C?"  Part="1"
 AR Path="/5ED67F7E/5ED9FE40" Ref="C305"  Part="1" 
 F 0 "C305" H 5642 1146 50  0000 L CNN
 F 1 "10uF" H 5642 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5550 1100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5550 1100 50  0001 C CNN
 F 3 "~" H 5550 1100 50  0001 C CNN
 	1    5550 1100
 	1    0    0    -1  
@@ -462,7 +462,7 @@ AR Path="/5EC1DA1F" Ref="R?"  Part="1"
 AR Path="/5ED67F7E/5EC1DA1F" Ref="R305"  Part="1" 
 F 0 "R305" V 2304 1300 50  0000 C CNN
 F 1 "470" V 2395 1300 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2500 1300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2500 1300 50  0001 C CNN
 F 3 "~" H 2500 1300 50  0001 C CNN
 	1    2500 1300
 	-1   0    0    1   
@@ -489,4 +489,6 @@ Text GLabel 2050 1150 2    50   Input ~ 0
 half_Bat
 Wire Wire Line
 	2100 950  2500 950 
+Text Label 1450 950  0    50   ~ 0
+PowerIn
 $EndSCHEMATC
