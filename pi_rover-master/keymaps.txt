@@ -1,0 +1,12 @@
+    w - forward
+    z - reverse/backward
+    a - long left turn
+    s - long right turn
+    q - short left turn
+    e - short right turn
+    1 - pan camera left
+    2 - pan camera right
+    3 - pan full left
+    4 - pan full right
+    / - home/center camera
+    h - halt/stop robot

@@ -1,0 +1,346 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C_Small C?
+U 1 1 60E85A1C
+P 6850 3000
+AR Path="/60E85A1C" Ref="C?"  Part="1" 
+AR Path="/60E56C1B/60E85A1C" Ref="C403"  Part="1" 
+F 0 "C403" H 6942 3046 50  0000 L CNN
+F 1 "100pF" H 6942 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6850 3000 50  0001 C CNN
+F 3 "~" H 6850 3000 50  0001 C CNN
+	1    6850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60E85A22
+P 6850 2850
+AR Path="/60E85A22" Ref="#PWR?"  Part="1" 
+AR Path="/60E56C1B/60E85A22" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 6850 2700 50  0001 C CNN
+F 1 "+5V" H 6865 3023 50  0000 C CNN
+F 2 "" H 6850 2850 50  0001 C CNN
+F 3 "" H 6850 2850 50  0001 C CNN
+	1    6850 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E85A28
+P 6850 3150
+AR Path="/60E85A28" Ref="#PWR?"  Part="1" 
+AR Path="/60E56C1B/60E85A28" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 6850 2900 50  0001 C CNN
+F 1 "GND" H 6855 2977 50  0000 C CNN
+F 2 "" H 6850 3150 50  0001 C CNN
+F 3 "" H 6850 3150 50  0001 C CNN
+	1    6850 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2850 6850 2900
+Wire Wire Line
+	6850 3100 6850 3150
+$Comp
+L Device:C_Small C?
+U 1 1 60E85A30
+P 6850 3900
+AR Path="/60E85A30" Ref="C?"  Part="1" 
+AR Path="/60E56C1B/60E85A30" Ref="C405"  Part="1" 
+F 0 "C405" H 6942 3946 50  0000 L CNN
+F 1 "100pF" H 6942 3855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6850 3900 50  0001 C CNN
+F 3 "~" H 6850 3900 50  0001 C CNN
+	1    6850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60E85A36
+P 6850 3750
+AR Path="/60E85A36" Ref="#PWR?"  Part="1" 
+AR Path="/60E56C1B/60E85A36" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 6850 3600 50  0001 C CNN
+F 1 "+5V" H 6865 3923 50  0000 C CNN
+F 2 "" H 6850 3750 50  0001 C CNN
+F 3 "" H 6850 3750 50  0001 C CNN
+	1    6850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E85A3C
+P 6850 4050
+AR Path="/60E85A3C" Ref="#PWR?"  Part="1" 
+AR Path="/60E56C1B/60E85A3C" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 6850 3800 50  0001 C CNN
+F 1 "GND" H 6855 3877 50  0000 C CNN
+F 2 "" H 6850 4050 50  0001 C CNN
+F 3 "" H 6850 4050 50  0001 C CNN
+	1    6850 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3750 6850 3800
+Wire Wire Line
+	6850 4000 6850 4050
+$Comp
+L Device:C_Small C?
+U 1 1 60E85A44
+P 7300 3000
+AR Path="/60E85A44" Ref="C?"  Part="1" 
+AR Path="/60E56C1B/60E85A44" Ref="C404"  Part="1" 
+F 0 "C404" H 7392 3046 50  0000 L CNN
+F 1 "10uF" H 7392 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7300 3000 50  0001 C CNN
+F 3 "~" H 7300 3000 50  0001 C CNN
+	1    7300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60E85A4A
+P 7300 2850
+AR Path="/60E85A4A" Ref="#PWR?"  Part="1" 
+AR Path="/60E56C1B/60E85A4A" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 7300 2700 50  0001 C CNN
+F 1 "+5V" H 7315 3023 50  0000 C CNN
+F 2 "" H 7300 2850 50  0001 C CNN
+F 3 "" H 7300 2850 50  0001 C CNN
+	1    7300 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E85A50
+P 7300 3150
+AR Path="/60E85A50" Ref="#PWR?"  Part="1" 
+AR Path="/60E56C1B/60E85A50" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 7300 2900 50  0001 C CNN
+F 1 "GND" H 7305 2977 50  0000 C CNN
+F 2 "" H 7300 3150 50  0001 C CNN
+F 3 "" H 7300 3150 50  0001 C CNN
+	1    7300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2850 7300 2900
+Wire Wire Line
+	7300 3100 7300 3150
+$Comp
+L Device:C_Small C?
+U 1 1 60E85A58
+P 7250 3900
+AR Path="/60E85A58" Ref="C?"  Part="1" 
+AR Path="/60E56C1B/60E85A58" Ref="C406"  Part="1" 
+F 0 "C406" H 7342 3946 50  0000 L CNN
+F 1 "10uF" H 7342 3855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7250 3900 50  0001 C CNN
+F 3 "~" H 7250 3900 50  0001 C CNN
+	1    7250 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60E85A5E
+P 7250 3750
+AR Path="/60E85A5E" Ref="#PWR?"  Part="1" 
+AR Path="/60E56C1B/60E85A5E" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 7250 3600 50  0001 C CNN
+F 1 "+5V" H 7265 3923 50  0000 C CNN
+F 2 "" H 7250 3750 50  0001 C CNN
+F 3 "" H 7250 3750 50  0001 C CNN
+	1    7250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E85A64
+P 7250 4050
+AR Path="/60E85A64" Ref="#PWR?"  Part="1" 
+AR Path="/60E56C1B/60E85A64" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 7250 3800 50  0001 C CNN
+F 1 "GND" H 7255 3877 50  0000 C CNN
+F 2 "" H 7250 4050 50  0001 C CNN
+F 3 "" H 7250 4050 50  0001 C CNN
+	1    7250 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 3750 7250 3800
+Wire Wire Line
+	7250 4000 7250 4050
+Wire Wire Line
+	5750 3800 5650 3800
+Wire Wire Line
+	5650 3700 5800 3700
+Wire Wire Line
+	5650 3600 5850 3600
+Wire Wire Line
+	5650 3500 5900 3500
+Wire Wire Line
+	5650 3400 6050 3400
+Wire Wire Line
+	5650 3300 6050 3300
+Wire Wire Line
+	5650 3200 6050 3200
+Wire Wire Line
+	5650 3100 6050 3100
+Wire Wire Line
+	6050 3000 5950 3000
+Wire Wire Line
+	5950 2850 5950 3000
+$Comp
+L Transistor_Array:ULN2803A U?
+U 1 1 60E85AEC
+P 5250 3300
+AR Path="/60E85AEC" Ref="U?"  Part="1" 
+AR Path="/60E56C1B/60E85AEC" Ref="U401"  Part="1" 
+F 0 "U401" H 5250 3150 50  0000 C CNN
+F 1 "ULN2003A" H 5250 3050 50  0000 C CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 5300 2750 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 5350 3100 50  0001 C CNN
+F 4 "3125091" H 5250 3300 50  0001 C CNN "FN#"
+	1    5250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60E85AF2
+P 5950 2850
+AR Path="/60E85AF2" Ref="#PWR?"  Part="1" 
+AR Path="/60E56C1B/60E85AF2" Ref="#PWR0122"  Part="1" 
+F 0 "#PWR0122" H 5950 2700 50  0001 C CNN
+F 1 "+5V" H 5965 3023 50  0000 C CNN
+F 2 "" H 5950 2850 50  0001 C CNN
+F 3 "" H 5950 2850 50  0001 C CNN
+	1    5950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 60E85AF8
+P 6250 3200
+AR Path="/60E85AF8" Ref="J?"  Part="1" 
+AR Path="/60E56C1B/60E85AF8" Ref="J401"  Part="1" 
+F 0 "J401" H 6330 3192 50  0000 L CNN
+F 1 "Steper1" H 6330 3101 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 6250 3200 50  0001 C CNN
+F 3 "~" H 6250 3200 50  0001 C CNN
+	1    6250 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4000 5250 4050
+$Comp
+L power:GND #PWR?
+U 1 1 60E85AFF
+P 5250 4050
+AR Path="/60E85AFF" Ref="#PWR?"  Part="1" 
+AR Path="/60E56C1B/60E85AFF" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 5250 3800 50  0001 C CNN
+F 1 "GND" H 5255 3877 50  0000 C CNN
+F 2 "" H 5250 4050 50  0001 C CNN
+F 3 "" H 5250 4050 50  0001 C CNN
+	1    5250 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3000 5650 3000
+Wire Wire Line
+	5700 2850 5700 3000
+$Comp
+L power:+5V #PWR?
+U 1 1 60E85B07
+P 5700 2850
+AR Path="/60E85B07" Ref="#PWR?"  Part="1" 
+AR Path="/60E56C1B/60E85B07" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 5700 2700 50  0001 C CNN
+F 1 "+5V" H 5715 3023 50  0000 C CNN
+F 2 "" H 5700 2850 50  0001 C CNN
+F 3 "" H 5700 2850 50  0001 C CNN
+	1    5700 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3100 4650 3100
+Wire Wire Line
+	4850 3200 4650 3200
+Wire Wire Line
+	4850 3300 4650 3300
+Wire Wire Line
+	4850 3400 4650 3400
+Wire Wire Line
+	4850 3500 4650 3500
+Wire Wire Line
+	4850 3600 4650 3600
+Wire Wire Line
+	4850 3700 4650 3700
+Wire Wire Line
+	4850 3800 4650 3800
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 60E85B3E
+P 6250 3750
+AR Path="/60E85B3E" Ref="J?"  Part="1" 
+AR Path="/60E56C1B/60E85B3E" Ref="J402"  Part="1" 
+F 0 "J402" H 6330 3742 50  0000 L CNN
+F 1 "Steper2" H 6330 3651 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 6250 3750 50  0001 C CNN
+F 3 "~" H 6250 3750 50  0001 C CNN
+	1    6250 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3000 5950 3550
+Wire Wire Line
+	5950 3550 6050 3550
+Connection ~ 5950 3000
+Wire Wire Line
+	6050 3650 5900 3650
+Wire Wire Line
+	5900 3500 5900 3650
+Wire Wire Line
+	6050 3750 5850 3750
+Wire Wire Line
+	5850 3600 5850 3750
+Wire Wire Line
+	6050 3850 5800 3850
+Wire Wire Line
+	5800 3700 5800 3850
+Wire Wire Line
+	6050 3950 5750 3950
+Wire Wire Line
+	5750 3800 5750 3950
+Text GLabel 4650 3200 0    50   Input ~ 0
+MD1
+Text GLabel 4650 3300 0    50   Input ~ 0
+MD2
+Text GLabel 4650 3400 0    50   Input ~ 0
+MD3
+Text GLabel 4650 3500 0    50   Input ~ 0
+MD4
+Text GLabel 4650 3600 0    50   Input ~ 0
+MD5
+Text GLabel 4650 3700 0    50   Input ~ 0
+MD6
+Text GLabel 4650 3800 0    50   Input ~ 0
+MD7
+Text GLabel 4650 3100 0    50   Input ~ 0
+MD0
+$EndSCHEMATC
