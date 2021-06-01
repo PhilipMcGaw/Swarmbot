@@ -2,8 +2,8 @@
 
 #include "HC_SR04.h"
 
-#define TRIG_PIN 2
-#define ECHO_PIN 3
+#define TRIG_PIN 3
+#define ECHO_PIN 2
 #define ECHO_INT 0
 
 HC_SR04 sensor(TRIG_PIN, ECHO_PIN, ECHO_INT);
