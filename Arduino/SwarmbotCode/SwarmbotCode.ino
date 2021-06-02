@@ -249,29 +249,29 @@ void serialOutput(bool debug) {
       // Send values through serial in a human readable way
       Serial.print("uptime: ");
       Serial.print(millis());
-      Serial.print(" ms, Bat V: ");
+      Serial.print(" ms\tBat V: ");
       Serial.print(batVoltage);
-      Serial.print(" %, IRLEDs ");
+      Serial.print(" %\tIRLEDs ");
       Serial.print(ir_leds);
-      Serial.print(", 1: ");
+      Serial.print("\t1: ");
       Serial.print(ir1Val);
-      Serial.print(" %, 2: ");
+      Serial.print("\t2: ");
       Serial.print(ir2Val);
-      Serial.print(" %, 3: ");
+      Serial.print("\t3: ");
       Serial.print(ir3Val);
-      Serial.print(" %, 4: ");
+      Serial.print("\t4: ");
       Serial.print(ir4Val);
-      Serial.print(" %, Sonar: ");
+      Serial.print("\tSonar: ");
       Serial.print(sonarDistance);
-      Serial.print(" cm, LHS Distance: ");
+      Serial.print(" cm\tLHS Distance: ");
       Serial.print(stepperLHS.distanceToGo());
-      Serial.print(" steps, Current pos: ");
+      Serial.print(" steps\tCurrent pos: ");
       Serial.print(stepperLHS.currentPosition());
-      Serial.print(" steps, RHS Distance: ");
+      Serial.print(" steps\tRHS Distance: ");
       Serial.print(stepperRHS.distanceToGo());
-      Serial.print(" steps, Current pos: ");
+      Serial.print(" steps\tCurrent pos: ");
       Serial.print(stepperLHS.currentPosition());
-      Serial.print(" steps, Byte: ");
+      Serial.print(" steps\tByte: ");
       Serial.println(incomingByte);
     } else {
       // less human readable than above
