@@ -147,8 +147,10 @@ void loop()
   if ( Serial.available() > 0 ) // if data is available to read
   {
     incomingByte = Serial.read(); // read it and store it in 'incomingByte'
-
   }
+
+  // I wonder if there is a better way to do this…
+  // how computationaly expensive is a divide by two?
 
   switch (incomingByte) {
     case 'q':
@@ -221,13 +223,6 @@ void loop()
     sonar.start();
   }
 
-
-  // Read the analoge pins and map them to 0-100 as more readable (loss of
-  // resolution should not be an issue).
-  // we only do this every so offten, this is to try and reduce the amount of
-  // serial and processing time used (map should be fairly low utilisation?)
-
-
   if (sendData.length() > 0) {
     bufferLen = Serial.availableForWrite();
     if (sendData.length() > bufferLen) {
@@ -249,6 +244,12 @@ void loop()
 String serialOutput(bool debug) {
   String sendData{};
 
+  // Read the analog pins and map them to 0-100 as more readable (loss of
+  // resolution should not be an issue).
+  // we only do this every so offten, this is to try and reduce the amount of
+  // serial and processing time used (map should be fairly low utilisation?)
+
+
   batVoltage = analogRead(BAT_PIN);
 
   ir1Val = analogRead(IR1);
@@ -265,7 +266,7 @@ String serialOutput(bool debug) {
 
   if (debug)
   {
-    // Assemble data into a human readable version
+    // Assemble data into a human readable(ish) format and add to the string
     sendData = "uptime: " + String(millis());
     sendData += " ms\tBat V: " + String(batVoltage);
     sendData += " %\tIRLEDs " + String(ir_leds);
