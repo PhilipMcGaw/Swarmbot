@@ -35,60 +35,45 @@
 
                   HTTP://BUSYDUCKS.COM/ASCII-ART-ARDUINOS
 *******************************************************************************/
-
-// Debug (this can now be changed from the serial console)
-bool debug = 0;
-
-// because the serial buffer is normaly 64 bytes, and over running this costs us
-// massive delays on the stepper motor, we change the size of this!
-// https://forum.arduino.cc/t/increase-size-of-serial-buffer/235420/2
-#define SERIAL_BUFFER_SIZE 256
-
-// Define step constant
-// If you want to drive the motor at full step, this should be 4
-// If you want to drive the motor at half steps, this should be 8.
-#define FULLSTEP 8
-const int MAXSPEED = 750;
-const int ACCELERATION = 500;
-int speedLHS = 750;
-int speedRHS = 750;
-int moveLHS = 4076;
-int moveRHS = -4076;
-
 // Include the AccelStepper Library
 #include "src/AccelStepper/AccelStepper.h"
 
-// Creates two instances of the stepermotor
-// Pins entered in sequence IN1-IN3-IN2-IN4 for proper step sequence, Diagram
-// can be found in the folder.
-// code from https://lastminuteengineers.com/28byj48-stepper-motor-arduino-tutorial/
-
-AccelStepper stepperLHS(FULLSTEP, 8, 10, 9, 11);
-AccelStepper stepperRHS(FULLSTEP, 4, 6, 5, 7);
+// Include the HC-SR04 code (non blocking https://www.instructables.com/Non-blocking-Ultrasonic-Sensor-for-Arduino/)
+#include "src/HC_SR04/HC_SR04.h"
 
 // Define the pins for the HC-SR04 sonar module
 #define TRIG_PIN 3
 #define ECHO_PIN 2
 #define ECHO_INT 0
 
-// This is distance that the sonar can see in cm.
-// this is a volatile as it changes very offten, and if its not, the value does
-// not update as quickly as it should.
-// https://www.arduino.cc/reference/en/language/variables/variable-scope-qualifiers/volatile/
-volatile int sonarDistance = 0;
-
-// Define the Analouge pins and their usesage
+// Define the input pins and their usesage
 #define BAT_PIN A5
-#define IRLEDS A4
 #define IR1 A3
 #define IR2 A2
 #define IR3 A1
 #define IR4 A0
 
-// Define the Digital Pins
+// Define the output Pins
 #define ON_CHARGE 12
 #define PI_ON 13
+#define IRLEDS A4
 
+// Debug (this can now be changed from the serial console)
+bool debug = 1;
+
+
+// String is not a primative (will look that up later?) NotQuiteHere tells me it
+// needs a capital letter… and I am not allowed to #define string String to make
+// the compiler fix it for me.
+String sendData{};
+int bufferLen{};
+
+// Define step constant
+// If you want to drive the motor at full step, this should be 4
+// If you want to drive the motor at half steps, this should be 8.
+#define FULLSTEP 8
+const int STEPPER_SPEED = 900;
+// const int ACCELERATION = 10;
 
 // vairiables
 
@@ -98,6 +83,17 @@ int ir1Val      = 0;
 int ir2Val      = 0;
 int ir3Val      = 0;
 int ir4Val      = 0;
+char direction  = 's';
+
+// this code came from https://www.instructables.com/id/BananaRaspberry-Pi-Arduino-Rover-With-Webcam/
+// and then NotQuiteHere happened to it
+char incomingByte; // variable to receive data from the serial port
+
+// This is distance that the sonar can see in cm.
+// this is a volatile as it changes very offten, and if its not, the value does
+// not update as quickly as it should.
+// https://www.arduino.cc/reference/en/language/variables/variable-scope-qualifiers/volatile/
+volatile int sonarDistance = 0;
 
 // Define Wheels constant
 
@@ -107,30 +103,28 @@ const float wheelDia = 40;
 const float pi = 3.14;
 const float wheel_circ = wheelDia * pi;
 
-// The 28BYJ-48 motor has 32 steps per revolution, however with the 1/63.6… gearbox, means that for a single revolution of the output shaft, we are looking at 2038 steps.
+// The 28BYJ-48 motor has 32 steps per revolution, however with the 1/63.6…
+// gearbox, means that for a single revolution of the output shaft, we are
+// looking at 2038 steps.
 
 const float stepsPermm = 2038 / wheel_circ;
 
-// Generally, you should use "unsigned long" for variables that hold time
-// The value will quickly become too large for an int to store
-unsigned long previousMillis = 0;
-unsigned long currentMillis = 0;
+// Creates two instances of the stepermotor
+// Pins entered in sequence IN1-IN3-IN2-IN4 for proper step sequence, pinout
+// diagram can be found in the Arduino code folder.
+// code from https://lastminuteengineers.com/28byj48-stepper-motor-arduino-tutorial/
 
-// this is the interval between analouge measurements in milliseconds (100ms is 10 Hz) there is implicit delay caused by working.
-const int interval = 100;
+AccelStepper stepperLHS(FULLSTEP, 8, 10, 9, 11);
+AccelStepper stepperRHS(FULLSTEP, 4, 6, 5, 7);
 
-// Include the HC-SR04 code (non blocking https://www.instructables.com/Non-blocking-Ultrasonic-Sensor-for-Arduino/)
-#include "src/HC_SR04/HC_SR04.h"
+// Create the instance of the Sonar sensor.
+
 HC_SR04 sonar(TRIG_PIN, ECHO_PIN, ECHO_INT);
-
-// this code came from https://www.instructables.com/id/BananaRaspberry-Pi-Arduino-Rover-With-Webcam/
-// and then NotQuiteHere happened to it
-char incomingByte; // variable to receive data from the serial port
 
 void setup() {
   // put your setup code here, to run once:
 
-  // Lets start a serial port… because why not?
+  // Lets start serial port
   Serial.begin(9600);
   while(!Serial);
 
@@ -139,15 +133,9 @@ void setup() {
 
   // set the maximum speed, acceleration factor,
   // initial speed and the target position
-  stepperLHS.setMaxSpeed(MAXSPEED);
-  stepperLHS.setAcceleration(ACCELERATION);
-  stepperLHS.setSpeed(speedLHS);
-  stepperLHS.moveTo(moveLHS);
+  stepperLHS.setMaxSpeed(STEPPER_SPEED);
+  stepperRHS.setMaxSpeed(STEPPER_SPEED);
 
-  stepperRHS.setMaxSpeed(MAXSPEED);
-  stepperRHS.setAcceleration(ACCELERATION);
-  stepperRHS.setSpeed(speedRHS);
-  stepperRHS.moveTo(moveRHS);
 
   pinMode(ON_CHARGE, INPUT);
   pinMode(PI_ON, OUTPUT);
@@ -155,9 +143,6 @@ void setup() {
 
 void loop()
 {
-  // put your main code here, to run repeatedly:
-  currentMillis = millis();
-
   // do things baised on serial messages…
   if ( Serial.available() > 0 ) // if data is available to read
   {
@@ -166,33 +151,65 @@ void loop()
   }
 
   switch (incomingByte) {
+    case 'q':
+      // drive left
+      stepperLHS.setSpeed(STEPPER_SPEED / 2);
+      stepperRHS.setSpeed(STEPPER_SPEED);
+      direction  = 'q';
+      break;
     case 'w':
-      // do things
+      // forwards
+      stepperLHS.setSpeed(STEPPER_SPEED);
+      stepperRHS.setSpeed(STEPPER_SPEED);
+      direction  = 'w';
+      break;
+    case 'e':
+      // drive right
+      stepperLHS.setSpeed(STEPPER_SPEED);
+      stepperRHS.setSpeed(STEPPER_SPEED / 2);
+      direction  = 'e';
       break;
     case 'a':
-      // do things
+      // turn left
+      stepperLHS.setSpeed(0);
+      stepperRHS.setSpeed(STEPPER_SPEED);
+      direction  = 'a';
       break;
     case 's':
       // stop
+      stepperLHS.setSpeed(0);
+      stepperRHS.setSpeed(0);
+      direction  = 's';
       break;
     case 'd':
-      // right
+      // turn right
+      stepperLHS.setSpeed(STEPPER_SPEED);
+      stepperRHS.setSpeed(0);
+      direction  = 'd';
+      break;
+    case 'z':
+      // hard left
+      stepperLHS.setSpeed(-STEPPER_SPEED);
+      stepperRHS.setSpeed(STEPPER_SPEED);
+      direction  = 'a';
       break;
     case 'x':
       // back
+      stepperLHS.setSpeed(-STEPPER_SPEED);
+      stepperRHS.setSpeed(-STEPPER_SPEED);
+      direction  = 'x';
+      break;
+    case 'c':
+      // hard right
+      stepperLHS.setSpeed(STEPPER_SPEED);
+      stepperRHS.setSpeed(-STEPPER_SPEED);
+      direction  = 'c';
       break;
 
     case 'm':
       // this turns debug on and off from the serial monitor
       debug = !debug;
-      incomingByte = '~';
-      break;
-
-    default:
-      // this clears the incomingByte variable, which is set to carriage return
-      // after a char is input, resulting in an extra line between each of the
-      // serial outputs as incomingByte is printed to the console.
-      incomingByte = '~';
+      incomingByte = '_';
       break;
   }
 
@@ -204,76 +221,67 @@ void loop()
     sonar.start();
   }
 
-  // Change direction once the motor reaches target position
-  if (stepperLHS.distanceToGo() == 0)
-    stepperLHS.moveTo(-stepperLHS.currentPosition());
-  if (stepperRHS.distanceToGo() == 0)
-    stepperRHS.moveTo(-stepperRHS.currentPosition());
-
-  // Move the motor one step
-  stepperLHS.run();
-  stepperRHS.run();
-
 
   // Read the analoge pins and map them to 0-100 as more readable (loss of
   // resolution should not be an issue).
   // we only do this every so offten, this is to try and reduce the amount of
   // serial and processing time used (map should be fairly low utilisation?)
 
-  if (currentMillis - previousMillis >= interval)
-  {
-    previousMillis = currentMillis;
 
-    batVoltage = analogRead(BAT_PIN);
-
-    ir1Val = analogRead(IR1);
-    ir2Val = analogRead(IR2);
-    ir3Val = analogRead(IR3);
-    ir4Val = analogRead(IR4);
-
-    batVoltage = map(batVoltage, 0, 1023, 0, 100);
-
-    ir1Val = map(ir1Val, 0, 1023, 0, 100);
-    ir2Val = map(ir2Val, 0, 1023, 0, 100);
-    ir3Val = map(ir3Val, 0, 1023, 0, 100);
-    ir4Val = map(ir4Val, 0, 1023, 0, 100);
-
-    serialOutput(debug);
+  if (sendData.length() > 0) {
+    bufferLen = Serial.availableForWrite();
+    if (sendData.length() > bufferLen) {
+      Serial.print(sendData.substring(0,bufferLen));
+      sendData = sendData.substring(bufferLen);
+    } else {
+      Serial.println(sendData);
+      sendData = "";
+    }
+  } else {
+    sendData = serialOutput(debug);
   }
 
+  // Sets the speed of the stepperRHS
+  stepperLHS.runSpeed();
+  stepperRHS.runSpeed();
 }
 
-void serialOutput(bool debug) {
+String serialOutput(bool debug) {
+  String sendData{};
+
+  batVoltage = analogRead(BAT_PIN);
+
+  ir1Val = analogRead(IR1);
+  ir2Val = analogRead(IR2);
+  ir3Val = analogRead(IR3);
+  ir4Val = analogRead(IR4);
+
+  batVoltage = map(batVoltage, 0, 1023, 0, 100);
+
+  ir1Val = map(ir1Val, 0, 1023, 0, 100);
+  ir2Val = map(ir2Val, 0, 1023, 0, 100);
+  ir3Val = map(ir3Val, 0, 1023, 0, 100);
+  ir4Val = map(ir4Val, 0, 1023, 0, 100);
+
   if (debug)
-    {
-      // Send values through serial in a human readable way
-      Serial.print("uptime: ");
-      Serial.print(millis());
-      Serial.print(" ms\tBat V: ");
-      Serial.print(batVoltage);
-      Serial.print(" %\tIRLEDs ");
-      Serial.print(ir_leds);
-      Serial.print("\t1: ");
-      Serial.print(ir1Val);
-      Serial.print("\t2: ");
-      Serial.print(ir2Val);
-      Serial.print("\t3: ");
-      Serial.print(ir3Val);
-      Serial.print("\t4: ");
-      Serial.print(ir4Val);
-      Serial.print("\tSonar: ");
-      Serial.print(sonarDistance);
-      Serial.print(" cm\tLHS Distance: ");
-      Serial.print(stepperLHS.distanceToGo());
-      Serial.print(" steps\tCurrent pos: ");
-      Serial.print(stepperLHS.currentPosition());
-      Serial.print(" steps\tRHS Distance: ");
-      Serial.print(stepperRHS.distanceToGo());
-      Serial.print(" steps\tCurrent pos: ");
-      Serial.print(stepperLHS.currentPosition());
-      Serial.print(" steps\tByte: ");
-      Serial.println(incomingByte);
-    } else {
-      // less human readable than above
-    }
+  {
+    // Assemble data into a human readable version
+    sendData = "uptime: " + String(millis());
+    sendData += " ms\tBat V: " + String(batVoltage);
+    sendData += " %\tIRLEDs " + String(ir_leds);
+    sendData += "\t1: " + String(ir1Val);
+    sendData += "\t2: " + String(ir2Val);
+    sendData += "\t3: " + String(ir3Val);
+    sendData += "\t4: " + String(ir4Val);
+    sendData += "\tSonar: " + String(sonarDistance);
+    sendData += " cm\tDirection: " + String(direction);
+    // sendData += " cm\tLHS Distance: " + String(stepperLHS.distanceToGo());
+    // sendData += " steps\tCurrent pos: " + String(stepperLHS.currentPosition());
+    // sendData += " steps\tRHS Distance: " + String(stepperRHS.distanceToGo());
+    // sendData += " steps\tCurrent pos: " + String(stepperLHS.currentPosition());
+    sendData += "\tByte: " + String(incomingByte);
+  } else {
+    // less human readable than above
+  }
+  return sendData;
 }
