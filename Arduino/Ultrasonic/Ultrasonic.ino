@@ -1,6 +1,6 @@
 // https://www.instructables.com/Non-blocking-Ultrasonic-Sensor-for-Arduino/
 
-#include "HC_SR04.h"
+#include "src/HC_SR04/HC_SR04.h"
 
 #define TRIG_PIN 3
 #define ECHO_PIN 2
