@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "SquashedFly Logo")(type KiCad)(uri "${KICAD_USER_TEMPLATE_DIR}/blank project/Libraries/SquashedFly Logos/SquashedFly Logo.pretty")(options "")(descr ""))
+  (lib (name Panelization)(type KiCad)(uri "${KICAD_USER_TEMPLATE_DIR}/blank project/Libraries/Kicad-Footprints-master/Panelization.pretty")(options "")(descr ""))
+  (lib (name MIC94052YC6-TR)(type KiCad)(uri ${KIPRJMOD}/Libraries/MIC94052YC6-TR/MIC94052YC6-TR.pretty)(options "")(descr ""))
+)

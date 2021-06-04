@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name SquashedFly_Logo)(type Legacy)(uri "${KICAD_USER_TEMPLATE_DIR}/blank project/Libraries/SquashedFly Logos/SquashedFly Logo.lib")(options "")(descr ""))
+  (lib (name MIC94052YC6-TR)(type Legacy)(uri ${KIPRJMOD}/Libraries/MIC94052YC6-TR/MIC94052YC6-TR.lib)(options "")(descr ""))
+)
