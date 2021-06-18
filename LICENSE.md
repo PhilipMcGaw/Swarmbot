@@ -1,6 +1,6 @@
-# SwarmBot License
+# License
 
-Copyright (c) 2019 Philip 'Skippy' McGaw - Some rights reserved
+Copyright (c) 2021 Philip 'Skippy' McGaw - Some rights reserved
 
 There are two parts to the Licensing, the Licence for the physical parts (CAD and Electrical), and the ethereal parts (Software).
 
@@ -28,7 +28,7 @@ The TAPR Noncommercial Hardware License ("NCL") agreement provides a legal frame
 
 Like the GNU General Public License, the NCL is designed to guarantee your freedom to share and to create.  It forbids anyone who receives rights under the NCL to deny any other licensee those same rights to copy, modify, and distribute documentation, and to make, use and distribute products based on that documentation.
 
-Unlike the GPL, the NCL is not primarily a copyright license.  While copyright protects documentation from unauthorized copying, modification, and distribution, it has little to do with your right to make, distribute, or use a product based on that documentation.  For better or worse, patents play a significant role in those activities.  Although it does not prohibit anyone from patenting inventions embodied in an Open Hardware design, and of course cannot prevent a third party from enforcing their patent rights, those who benefit from an OHL design may not bring lawsuits claiming that design infringes their patents or other intellectual property.
+Unlike the GPL, the NCL is not primarily a copyright license.  While copyright protects documentation from unauthorised copying, modification, and distribution, it has little to do with your right to make, distribute, or use a product based on that documentation.  For better or worse, patents play a significant role in those activities.  Although it does not prohibit anyone from patenting inventions embodied in an Open Hardware design, and of course cannot prevent a third party from enforcing their patent rights, those who benefit from an OHL design may not bring lawsuits claiming that design infringes their patents or other intellectual property.
 
 The NCL addresses unique issues involved in the creation of tangible, physical things, but does not cover software, firmware, or code loaded into programmable devices.  A copyright-oriented license such as the GPL better suits these creations.
 
