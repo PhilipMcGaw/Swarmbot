@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title "COTS Swarmbot"
 Date "2021-06-04"
 Rev ""
@@ -42,7 +42,7 @@ U 1 1 60B9402D
 P 1550 1150
 F 0 "J2" H 1468 825 50  0000 C CNN
 F 1 "Charger" H 1468 916 50  0000 C CNN
-F 2 "" H 1550 1150 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 1550 1150 50  0001 C CNN
 F 3 "~" H 1550 1150 50  0001 C CNN
 	1    1550 1150
 	-1   0    0    1   
@@ -224,7 +224,7 @@ U 1 1 60BA66A0
 P 4300 1050
 F 0 "J1" H 4380 1042 50  0000 L CNN
 F 1 "Battery" H 4380 951 50  0000 L CNN
-F 2 "" H 4300 1050 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 4300 1050 50  0001 C CNN
 F 3 "~" H 4300 1050 50  0001 C CNN
 	1    4300 1050
 	1    0    0    -1  
@@ -263,7 +263,7 @@ Connection ~ 3900 1450
 Wire Wire Line
 	3900 1450 3900 1150
 Text GLabel 4200 1600 2    50   Output ~ 0
-Supply_-Ve
+GND
 $Comp
 L power:GND #PWR06
 U 1 1 60BA74EA

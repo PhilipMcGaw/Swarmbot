@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "COTS Swarmbot"
 Date "2021-06-07"
 Rev ""
@@ -47,4 +47,10 @@ F 3 "~" H 10700 7100 50  0001 C CNN
 	1    10700 7100
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 3850 4050 2450 900 
+U 60DF275F
+F0 "Minimal STM32" 50
+F1 "Minimal STM32.sch" 50
+$EndSheet
 $EndSCHEMATC
