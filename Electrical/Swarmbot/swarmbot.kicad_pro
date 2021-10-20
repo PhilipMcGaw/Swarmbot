@@ -382,11 +382,10 @@
           "+5V",
           "+BATT",
           "/Charging Pad Lower",
-          "/Charging Pad Top",
           "/Charging Top Pad",
           "/Top PCB/ESP32/5V Switched 1",
           "/Top PCB/Power/+BatDiode",
-          "/Top PCB/Power/PowerIn",
+          "/Top PCB/Power/Bat+VE",
           "/Top PCB/Power/PowerInDiode",
           "/Top PCB/Power/PowerInInrush",
           "/Top PCB/Power/VBAT",
@@ -413,7 +412,7 @@
       "netlist": "",
       "specctra_dsn": "",
       "step": "swarmbot.step",
-      "vrml": ""
+      "vrml": "swarmbot.wrl"
     },
     "page_layout_descr_file": "/Users/skippy/Documents/Projects/_Vitamins/KiCad Libraries/Drawing Frame/SquashedFly.kicad_wks"
   },
