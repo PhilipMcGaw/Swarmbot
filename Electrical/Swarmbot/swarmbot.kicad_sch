@@ -1579,6 +1579,12 @@
     (path "/c85348ca-3cf8-4724-b694-9f5814489773/dd2406ed-747a-4f4d-9c49-897af2c8a726/fd33ac17-9822-445e-a679-1d3caed97202"
       (reference "#PWR0116") (unit 1) (value "GND") (footprint "")
     )
+    (path "/c85348ca-3cf8-4724-b694-9f5814489773/48c84b68-bfd7-42ce-bb6f-04b1295ec607/2c6cadcf-d75b-4ad9-8c65-f8ee61bc3e8f"
+      (reference "#PWR0117") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c85348ca-3cf8-4724-b694-9f5814489773/48c84b68-bfd7-42ce-bb6f-04b1295ec607/79b239e2-e887-4ed2-bec8-b99d931c2634"
+      (reference "#PWR0118") (unit 1) (value "+3V3") (footprint "")
+    )
     (path "/c85348ca-3cf8-4724-b694-9f5814489773/923ef8cc-c383-45c7-85c1-fd96e418aa76/61331e57-f8a1-4572-97c8-b763b851337f"
       (reference "C1") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
@@ -1704,6 +1710,9 @@
     )
     (path "/c85348ca-3cf8-4724-b694-9f5814489773/48c84b68-bfd7-42ce-bb6f-04b1295ec607/65c3b74e-4808-43dd-a444-352c1d20780b"
       (reference "J6") (unit 1) (value "Motors") (footprint "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical")
+    )
+    (path "/c85348ca-3cf8-4724-b694-9f5814489773/48c84b68-bfd7-42ce-bb6f-04b1295ec607/79452f70-7817-479d-8522-a791d02ced7e"
+      (reference "J7") (unit 1) (value "Sensors") (footprint "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical")
     )
     (path "/c85348ca-3cf8-4724-b694-9f5814489773/dd2406ed-747a-4f4d-9c49-897af2c8a726/8459ec9b-2660-4931-a8c3-4e2720465225"
       (reference "L1") (unit 1) (value "3.3uH") (footprint "Inductor_SMD:L_6.3x6.3_H3")
