@@ -5,6 +5,10 @@
 *.b#?
 *.l#?
 
+# Trying to add this line to remove the backup zip files, without culling all zip files
+/Electrical/Swarmbot/swarmbot-backups/*
+
+
 # Eagle project file
 # It contains a serial number and references to the file structure
 # on your computer.
