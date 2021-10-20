@@ -1703,7 +1703,7 @@
       (reference "J5") (unit 1) (value "Raspberry_Pi_2_3") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical")
     )
     (path "/c85348ca-3cf8-4724-b694-9f5814489773/48c84b68-bfd7-42ce-bb6f-04b1295ec607/65c3b74e-4808-43dd-a444-352c1d20780b"
-      (reference "J6") (unit 1) (value "Motors") (footprint "Connector_JST:JST_XH_B4B-XH-AM_1x04_P2.50mm_Vertical")
+      (reference "J6") (unit 1) (value "Motors") (footprint "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical")
     )
     (path "/c85348ca-3cf8-4724-b694-9f5814489773/dd2406ed-747a-4f4d-9c49-897af2c8a726/8459ec9b-2660-4931-a8c3-4e2720465225"
       (reference "L1") (unit 1) (value "3.3uH") (footprint "Inductor_SMD:L_6.3x6.3_H3")
@@ -1850,7 +1850,7 @@
       (reference "Servo1") (unit 1) (value "Conn_01x03_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
     )
     (path "/5f6cee8b-fa02-4b5d-b2fb-d55888598f3e/ce213d71-caa6-4aff-b485-f1c40ddcb509"
-      (reference "Sonar1") (unit 1) (value "Conn_01x04_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
+      (reference "Sonar1") (unit 1) (value "Conn_01x04_Male") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical")
     )
     (path "/5f6cee8b-fa02-4b5d-b2fb-d55888598f3e/16d8ac21-b00b-4423-abf8-9926cd0d143a"
       (reference "U1") (unit 1) (value "QRE1113GR") (footprint "OptoDevice:OnSemi_CASE100CY")
