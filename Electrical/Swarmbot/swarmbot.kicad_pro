@@ -88,6 +88,7 @@
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
+        "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
         "track_width": "error",
@@ -383,6 +384,9 @@
           "+BATT",
           "/Charging Pad Lower",
           "/Charging Top Pad",
+          "/Lower PCB 3V3",
+          "/Lower PCB 5V",
+          "/Lower PCB GND",
           "/Top PCB/ESP32/5V Switched 1",
           "/Top PCB/Power/+BatDiode",
           "/Top PCB/Power/Bat+VE",
@@ -466,12 +470,12 @@
       "Top PCB"
     ],
     [
-      "5f6cee8b-fa02-4b5d-b2fb-d55888598f3e",
-      "Lower PCB"
+      "5d15566c-5097-46b2-9aea-260d20f1ae66",
+      "Motors"
     ],
     [
-      "48c84b68-bfd7-42ce-bb6f-04b1295ec607",
-      "Motors"
+      "5f6cee8b-fa02-4b5d-b2fb-d55888598f3e",
+      "Lower PCB"
     ],
     [
       "923ef8cc-c383-45c7-85c1-fd96e418aa76",
