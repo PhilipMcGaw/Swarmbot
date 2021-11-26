@@ -386,12 +386,12 @@
           "/Lower PCB 5V",
           "/Lower PCB GND",
           "/Top PCB/ESP32/5V Switched 1",
-          "/Top PCB/Power In",
           "/Top PCB/Power/+BatDiode",
           "/Top PCB/Power/Bat+VE",
           "/Top PCB/Power/PowerInDiode",
           "/Top PCB/Power/PowerInInrush",
           "/Top PCB/Power/VBAT",
+          "/Top PCB/Power/bat-ve",
           "/Top PCB/Power/vbatInductor",
           "GND"
         ],
@@ -412,7 +412,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "../../../../../../Applications/",
       "specctra_dsn": "",
       "step": "swarmbot.step",
       "vrml": "swarmbot.wrl"
@@ -475,6 +475,18 @@
     [
       "5f6cee8b-fa02-4b5d-b2fb-d55888598f3e",
       "Lower PCB"
+    ],
+    [
+      "fde0cf10-9668-48f0-8537-71bae0af2169",
+      "Version of PCB"
+    ],
+    [
+      "0d5a06a8-4e1a-4376-b67f-4581d68503e2",
+      "IR LEDS"
+    ],
+    [
+      "ba54daad-a44c-46ab-81fe-b699834f8190",
+      "Bottom PCB Version"
     ],
     [
       "923ef8cc-c383-45c7-85c1-fd96e418aa76",
