@@ -6,7 +6,7 @@
 *.l#?
 
 # Trying to add this line to remove the backup zip files, without culling all zip files
-/Swarmbot/swarmbot-backups/*
+/Electronics/swarmbot-backups/*
 
 
 # Eagle project file
