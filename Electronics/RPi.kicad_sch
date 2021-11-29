@@ -457,13 +457,13 @@
     )
   )
 
-  (junction (at 142.24 45.72) (diameter 0) (color 0 0 0 0))
-  (junction (at 152.4 120.65) (diameter 0) (color 0 0 0 0))
   (junction (at 137.16 120.65) (diameter 0) (color 0 0 0 0))
-  (junction (at 63.5 45.72) (diameter 0) (color 0 0 0 0))
+  (junction (at 144.78 120.65) (diameter 0) (color 0 0 0 0))
+  (junction (at 152.4 120.65) (diameter 0) (color 0 0 0 0))
   (junction (at 147.32 120.65) (diameter 0) (color 0 0 0 0))
   (junction (at 149.86 120.65) (diameter 0) (color 0 0 0 0))
-  (junction (at 144.78 120.65) (diameter 0) (color 0 0 0 0))
+  (junction (at 63.5 45.72) (diameter 0) (color 0 0 0 0))
+  (junction (at 142.24 45.72) (diameter 0) (color 0 0 0 0))
   (junction (at 142.24 120.65) (diameter 0) (color 0 0 0 0))
 
   (no_connect (at 139.7 118.11) (uuid 77913923-8799-4af4-8353-f4f8969f23eb))

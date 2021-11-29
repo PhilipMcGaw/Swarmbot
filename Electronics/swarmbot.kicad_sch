@@ -752,8 +752,8 @@
     )
   )
 
-  (junction (at 54.61 31.75) (diameter 0) (color 0 0 0 0))
   (junction (at 56.515 46.355) (diameter 0) (color 0 0 0 0))
+  (junction (at 54.61 31.75) (diameter 0) (color 0 0 0 0))
 
   (wire (pts (xy 104.14 58.42) (xy 109.22 58.42))
     (stroke (width 0) (type default) (color 0 0 0 0))
