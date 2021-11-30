@@ -14,13 +14,13 @@ Regards
 
 Philip 'Skippy' McGaw
 
-## TAPR Noncommercial Hardware License
+# TAPR Noncommercial Hardware License
 
 The TAPR Noncommercial Hardware License
 Version 1.0 (May 25, 2007)
 Copyright 2007 TAPR - http://www.tapr.org/NCL
 
-PREAMBLE
+## PREAMBLE
 
 Open Hardware is a thing - a physical artifact, either electrical or mechanical - whose design information is available to, and usable by, the public in a way that allows anyone to make, modify, distribute, and use that thing.  In this preface, design information is called "documentation" and things created from it are called "products."
 
@@ -61,7 +61,7 @@ How can you use the NCL, or a design based upon it?  While the terms and conditi
     *  You must include both "before" and "after" versions of all files you modified.
     *  You may include files in proprietary formats, but you must also include open format versions (such as Gerber, ASCII, Postscript, or PDF) if your tools can create them.
 
-TERMS AND CONDITIONS
+## TERMS AND CONDITIONS
 
 1.   Introduction
 1.1  This Agreement governs how you may use, copy, modify, and distribute Documentation, and how you may make, have made, and distribute Products based on that Documentation.  As used in this Agreement, to "distribute" Documentation means to directly or indirectly make copies available to a third party, and to "distribute" Products means to directly or indirectly give, loan, sell or otherwise transfer them to a third party.
@@ -129,7 +129,7 @@ TAPR may publish updated versions of the NCL which retain the same general provi
 7.4  You agree to defend, indemnify, and hold each Licensor harmless from any claim brought by a third party alleging any defect in the design, manufacture, or operation of any Product which you make, have made, or distribute pursuant to this Agreement.
 
 
-## The MIT License (MIT)
+# The MIT License (MIT)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

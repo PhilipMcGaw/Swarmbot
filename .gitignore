@@ -1,43 +1,5 @@
-# Ignore list for Eagle, a PCB layout tool
-
-# Backup files
-*.s#?
-*.b#?
-*.l#?
-
-# Trying to add this line to remove the backup zip files, without culling all zip files
+# KiCad backup zip files
 /Electronics/swarmbot-backups/*
-
-
-# Eagle project file
-# It contains a serial number and references to the file structure
-# on your computer.
-# un-comment the following line if you want to have your project file included.
-eagle.epf
-
-# CAM files
-*.$$$
-*.cmp
-*.ly2
-*.l15
-*.sol
-*.plc
-*.stc
-*.sts
-*.crc
-*.crs
-
-*.dri
-*.drl
-*.gpi
-*.pls
-
-*.drd
-*.drd.*
-
-*.info
-
-*.eps
 
 # =========================
 # Operating System Files
