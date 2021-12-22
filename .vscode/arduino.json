@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "programmer": "arduino:avrisp",
+    "sketch": "Software/Arduino/Arduino.ino"
+}
